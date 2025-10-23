@@ -1,0 +1,13 @@
+*.csv
+*.xlsx
+*.json
+train.csv
+test.csv
+*.zip
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/
+
+# OS
+.DS_Store
+Thumbs.db
