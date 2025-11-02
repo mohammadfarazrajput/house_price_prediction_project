@@ -109,18 +109,3 @@ Place `train.csv` and `test.csv` in the `data/` folder.
 ---
 
 **Status:** ✅ Completed - November 2025
-```
-
----
-
-### **Step 3: Create requirements.txt**
-
-**Create a new file `requirements.txt` with:**
-```
-pandas>=1.3.0
-numpy>=1.21.0
-scikit-learn>=1.0.0
-xgboost>=1.5.0
-matplotlib>=3.4.0
-seaborn>=0.11.0
-jupyter>=1.0.0
