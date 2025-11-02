@@ -103,9 +103,8 @@ Place `train.csv` and `test.csv` in the `data/` folder.
 
 ## 📫 Contact
 
-**Your Name** - [Your LinkedIn] | [Your Email]  
-**Project Link:** [GitHub Repository URL]
+**Your Name** - https://www.linkedin.com/in/mohammad-faraz-rajput-837809194 | farazrajput112@gmail.com 
 
 ---
 
-**Status:** ✅ Completed - November 2025
+**Status:** ✅ Completed - 2 November 2025
