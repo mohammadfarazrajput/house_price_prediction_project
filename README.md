@@ -1,10 +1,6 @@
 ````md
 # 🏠 House Price Prediction using Machine Learning
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)](https://scikit-learn.org/)
-[![XGBoost](https://img.shields.io/badge/XGBoost-1.5+-green.svg)](https://xgboost.readthedocs.io/)
-
 > **Predict house prices with 90.6% accuracy using XGBoost. Systematic feature engineering reduces 81 features to 13, achieving top 25% Kaggle performance.**
 
 ---
@@ -104,7 +100,7 @@ house-price-prediction/
 ├── models/
 │   └── xgboost_model.pkl         # Saved best model
 │
-├── plots/
+├────
 │   ├── feature_importance.png    # Top features visualization
 │   ├── actual_vs_predicted.png   # Prediction accuracy
 │   └── residual_analysis.png     # Error distribution
