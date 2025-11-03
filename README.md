@@ -1,4 +1,3 @@
-````md
 # 🏠 House Price Prediction using Machine Learning
 
 > **Predict house prices with 90.6% accuracy using XGBoost. Systematic feature engineering reduces 81 features to 13, achieving top 25% Kaggle performance.**
@@ -48,10 +47,9 @@ Built an end-to-end ML pipeline to predict house sale prices on the **Ames Housi
 ### Prerequisites
 ```bash
 pip install pandas numpy scikit-learn xgboost matplotlib seaborn jupyter
-````
+```
 
 ### Download Dataset
-
 ```bash
 # Using Kaggle CLI
 kaggle competitions download -c house-prices-advanced-regression-techniques
@@ -61,7 +59,6 @@ unzip house-prices-advanced-regression-techniques.zip
 Or download manually from: [Kaggle Competition](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
 
 ### Run the Project
-
 ```bash
 # Start Jupyter Notebook
 jupyter notebook house_price_prediction.ipynb
@@ -71,7 +68,6 @@ python train_model.py
 ```
 
 ### Use Saved Model for Predictions
-
 ```python
 import pickle
 import pandas as pd
@@ -86,10 +82,9 @@ prediction = model.predict(pd.DataFrame([new_house]))
 print(f"Predicted Price: ${prediction[0]:,.2f}")
 ```
 
------
+---
 
 ## 📁 Project Structure
-
 ```
 house-price-prediction/
 │
@@ -100,7 +95,7 @@ house-price-prediction/
 ├── models/
 │   └── xgboost_model.pkl         # Saved best model
 │
-├────
+├── plots/
 │   ├── feature_importance.png    # Top features visualization
 │   ├── actual_vs_predicted.png   # Prediction accuracy
 │   └── residual_analysis.png     # Error distribution
@@ -111,57 +106,57 @@ house-price-prediction/
 └── LICENSE                       # MIT License
 ```
 
------
+---
 
 ## 🔍 Methodology
 
-1.  **EDA:** Analyzed 1,460 houses with 81 features
-2.  **Feature Engineering:**
-      * Removed 18 low-correlation features (\<0.2)
-      * Dropped 19 features with \>5% missing values
-      * Eliminated 4 multicollinear features (\>0.8 correlation)
-      * Selected 13 high-impact features
-3.  **Preprocessing:** One-hot encoding + StandardScaler
-4.  **Training:** Compared 4 algorithms (Linear, Tree, RF, XGBoost)
-5.  **Validation:** 80-20 train-test split, overfitting analysis
+1. **EDA:** Analyzed 1,460 houses with 81 features
+2. **Feature Engineering:**
+   * Removed 18 low-correlation features (<0.2)
+   * Dropped 19 features with >5% missing values
+   * Eliminated 4 multicollinear features (>0.8 correlation)
+   * Selected 13 high-impact features
+3. **Preprocessing:** One-hot encoding + StandardScaler
+4. **Training:** Compared 4 algorithms (Linear, Tree, RF, XGBoost)
+5. **Validation:** 80-20 train-test split, overfitting analysis
 
------
+---
 
 ## 💡 Key Insights
 
-  * **Quality \> Size:** `OverallQual` is the \#1 predictor (stronger than `GrLivArea`)
-  * **Location Matters:** `Neighborhood` creates 20–30% price variance
-  * **Categorical Features:** Adding 3 categorical features improved R² from 88.5% → 90.6% (+2.1%)
-  * **Model Choice:** XGBoost outperforms simpler models while maintaining fast training
+* **Quality > Size:** `OverallQual` is the #1 predictor (stronger than `GrLivArea`)
+* **Location Matters:** `Neighborhood` creates 20–30% price variance
+* **Categorical Features:** Adding 3 categorical features improved R² from 88.5% → 90.6% (+2.1%)
+* **Model Choice:** XGBoost outperforms simpler models while maintaining fast training
 
 **Top 3 Features:**
 
-1.  `OverallQual` (0.79 correlation)
-2.  `GrLivArea` (0.71 correlation)
-3.  `GarageCars` (0.64 correlation)
+1. `OverallQual` (0.79 correlation)
+2. `GrLivArea` (0.71 correlation)
+3. `GarageCars` (0.64 correlation)
 
------
+---
 
 ## 🛠️ Technologies
 
-  * **Python 3.8+** - Programming language
-  * **Pandas/NumPy** - Data manipulation
-  * **Scikit-learn** - ML models & preprocessing
-  * **XGBoost** - Gradient boosting
-  * **Matplotlib/Seaborn** - Visualization
-  * **Jupyter** - Interactive development
+* **Python 3.8+** - Programming language
+* **Pandas/NumPy** - Data manipulation
+* **Scikit-learn** - ML models & preprocessing
+* **XGBoost** - Gradient boosting
+* **Matplotlib/Seaborn** - Visualization
+* **Jupyter** - Interactive development
 
------
+---
 
 ## 🚧 Future Improvements
 
-  * Hyperparameter tuning with GridSearchCV (expected +1–2% R²)
-  * Advanced feature engineering (polynomial features, interactions)
-  * Ensemble stacking (XGBoost + Random Forest)
-  * Deploy as Flask/FastAPI web service
-  * Add external data (school ratings, crime stats, walkability)
+* Hyperparameter tuning with GridSearchCV (expected +1–2% R²)
+* Advanced feature engineering (polynomial features, interactions)
+* Ensemble stacking (XGBoost + Random Forest)
+* Deploy as Flask/FastAPI web service
+* Add external data (school ratings, crime stats, walkability)
 
------
+---
 
 ## 📈 Visualizations
 
@@ -179,25 +174,24 @@ house-price-prediction/
 
 *(See `/plots/` folder for all visualizations)*
 
------
+---
 
 ## 📝 License
 
 This project is licensed under the MIT License - see `LICENSE` file for details.
 
------
+---
 
 ## 📫 Contact
 
 **Mohammad Faraz Rajput**
 
-📧 **Email:** `farazrajput112@gmail.com`  
-💼 **LinkedIn:** `linkedin.com/in/mohammad-faraz-rajput-837809194`  
-🐙 **GitHub:** `@yourusername`
+📧 **Email:** farazrajput112@gmail.com  
+💼 **LinkedIn:** [linkedin.com/in/mohammad-faraz-rajput-837809194](https://linkedin.com/in/mohammad-faraz-rajput-837809194)  
+🐙 **GitHub:** [@yourusername](https://github.com/yourusername)
 
-## ⭐ *If you found this project helpful, please star the repository\!*
+---
+
+## ⭐ If you found this project helpful, please star the repository!
 
 **Status:** ✅ Complete | November 2025
-
-```
-```
