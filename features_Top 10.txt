@@ -1,0 +1,10 @@
+1. OverallQual
+2. GrLivArea
+3. GarageCars
+4. TotalBsmtSF
+5. FullBath
+6. YearBuilt
+7. YearRemodAdd
+8. MasVnrArea
+9. Fireplaces
+10. BsmtFinSF1

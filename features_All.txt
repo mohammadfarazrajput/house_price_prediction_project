@@ -1,0 +1,14 @@
+1. OverallQual
+2. GrLivArea
+3. GarageCars
+4. TotalBsmtSF
+5. FullBath
+6. YearBuilt
+7. YearRemodAdd
+8. MasVnrArea
+9. Fireplaces
+10. BsmtFinSF1
+11. LotFrontage
+12. WoodDeckSF
+13. 2ndFlrSF
+14. OpenPorchSF
